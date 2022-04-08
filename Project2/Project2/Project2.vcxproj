@@ -19,14 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\TestCode\SDL2 TUT\01_hello_SDL\01_hello_SDL.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Default.bmp" />
-    <Image Include="Down.bmp" />
-    <Image Include="Left.bmp" />
-    <Image Include="Right.bmp" />
-    <Image Include="Up.bmp" />
+    <ClCompile Include="01_hello_SDL.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -90,8 +83,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\Rac\SDL_ttf-2.0.11\include;C:\SDL2-2.0.20\include;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\Rac\SDL_ttf-2.0.11\lib\x64;C:\SDL2-2.0.20\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\Rac\SDL2_ttf-2.0.18\include;C:\SDL2-2.0.20\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Rac\SDL2_ttf-2.0.18\lib\x64;C:\SDL2-2.0.20\lib\x64;$(LibraryPath)</LibraryPath>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -136,7 +129,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

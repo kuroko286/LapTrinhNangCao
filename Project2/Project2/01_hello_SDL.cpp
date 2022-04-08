@@ -5,6 +5,11 @@
 #include<vector>
 #include<iostream>
 #include<time.h>
+#include<SDL_ttf.h>
+#include "string"
+
+#define FONT_LINK "font.ttf"
+
 
 
 using namespace std;
@@ -27,6 +32,15 @@ SDL_Window* window = NULL;
 SDL_Surface* screenSurface = NULL;
 //Render
 SDL_Renderer* render = NULL;
+//Font to render text
+TTF_Font* font;
+
+//color of text
+SDL_Color foreground = { 255, 255, 255, 0 };
+
+//location of score board
+SDL_Rect score_label = {10, 10, 50, 50};
+SDL_Rect score_rect = {65, 10};
 
 
 struct Point {
@@ -87,7 +101,7 @@ void eatSelf() {
 		}
 	}
 }
-	
+
 void drawSnake() {
 	for (auto it = snake.begin(); it != snake.end(); it++) {
 		if (it == snake.begin()) {
@@ -101,6 +115,10 @@ void drawSnake() {
 	}
 }
 void moveSnake() {
+	Point head = *snake.begin();
+
+	/*if(head.curr_x == )*/
+
 	for (auto it = snake.begin(); it != snake.end(); ++it) {
 		if (it == snake.begin()) {
 			it->pre_x = it->curr_x;
@@ -123,12 +141,54 @@ void moveSnake() {
 	}
 }
 
+void drawScore() {
+	string slabel = "SCORE :";
+	string score_str = to_string(score);
+
+
+	//render "SCORE :"
+	SDL_Surface* slabel_sur = TTF_RenderText_Blended(font, slabel.c_str(), foreground);
+	if (!slabel_sur) {
+		cerr << "Can't create SCORE laber surface : " << SDL_GetError() << endl;
+		return;
+	}
+	SDL_Texture* slabel_texture = SDL_CreateTextureFromSurface(render, slabel_sur);
+	SDL_RenderCopy(render, slabel_texture, nullptr, &score_label);
+
+	//render score
+	SDL_Surface* score_sur = TTF_RenderText_Blended(font, score_str.c_str(), foreground);
+	if (!score_sur) {
+		cerr << "Can't create score surface: " << SDL_GetError() << endl;
+		return;
+	}
+	score_rect.w = score_sur->w;
+	score_rect.h = score_sur->h;
+	SDL_Texture* score_texture = SDL_CreateTextureFromSurface(render, score_sur);
+	SDL_RenderCopy(render, score_texture, nullptr, &score_rect);
+
+	//free memory
+	SDL_FreeSurface(slabel_sur);
+	SDL_FreeSurface(score_sur);
+	slabel_sur = nullptr;
+	score_sur = nullptr;
+
+}
+
 
 void init() {
 	SDL_Init(SDL_INIT_VIDEO);
 	window = SDL_CreateWindow("Hello", 200, 200, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 	screenSurface = SDL_GetWindowSurface(window);
 	render = SDL_CreateRenderer(window,1,0);
+	
+	if (TTF_Init() < 0) {
+		cout << "Error initializing SDL_ttf: " << TTF_GetError() << endl;
+	}
+	
+	font = TTF_OpenFont(FONT_LINK, 36);
+	if (!font) {
+		cerr << "Can't open font :" << SDL_Error << endl;
+	}
 }
 
 void close() {
@@ -142,7 +202,6 @@ void close() {
 
 void display() {
 	bool quit = false;
-	init();
 	initSnake();
 	initFood();
 	SDL_Event e;
@@ -182,6 +241,7 @@ void display() {
 		moveSnake();
 		drawSnake();
 		drawFood();
+		drawScore();
 		eatSelf();
 		eatFood();
 		SDL_RenderPresent(render);
@@ -198,6 +258,7 @@ void display() {
 
 int main( int argc, char* args[] )
 {
+	init();
 	srand(time(0));
 	display();
 	return 0;

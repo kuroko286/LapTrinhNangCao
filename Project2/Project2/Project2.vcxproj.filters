@@ -15,25 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\TestCode\SDL2 TUT\01_hello_SDL\01_hello_SDL.cpp">
+    <ClCompile Include="01_hello_SDL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Default.bmp">
-      <Filter>Source Files</Filter>
-    </Image>
-    <Image Include="Up.bmp">
-      <Filter>Source Files</Filter>
-    </Image>
-    <Image Include="Down.bmp">
-      <Filter>Source Files</Filter>
-    </Image>
-    <Image Include="Left.bmp">
-      <Filter>Source Files</Filter>
-    </Image>
-    <Image Include="Right.bmp">
-      <Filter>Source Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>
