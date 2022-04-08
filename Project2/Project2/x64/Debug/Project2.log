@@ -1,3 +1,4 @@
 ﻿  01_hello_SDL.cpp
-C:\LapTrinhNangCao\Project2\Project2\01_hello_SDL.cpp(262,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\01_hello_SDL.cpp(282,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\01_hello_SDL.cpp(212): warning C4715: 'init': not all control paths return a value
   Project2.vcxproj -> C:\LapTrinhNangCao\Project2\x64\Debug\Project2.exe

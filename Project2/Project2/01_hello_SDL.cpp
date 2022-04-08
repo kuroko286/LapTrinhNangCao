@@ -24,7 +24,7 @@ int score = 0;
 
 enum Direction {
 	LEFT,RIGHT,UP,DOWN
-};
+};		
 
 //The window we'll be rendering to
 SDL_Window* window = NULL;
@@ -175,11 +175,31 @@ void drawScore() {
 }
 
 
-void init() {
+bool init() {
+	/*if (!SDL_Init(SDL_INIT_VIDEO)) {
+		cerr << "Can't init SDL for video : " << SDL_GetError << endl;
+		return false;
+	};*/
+
 	SDL_Init(SDL_INIT_VIDEO);
+	
 	window = SDL_CreateWindow("Hello", 200, 200, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+	if (!window) {
+		cerr << "Can't create window :"  << SDL_GetError << endl;
+		return false;
+	}
+	
 	screenSurface = SDL_GetWindowSurface(window);
+	if (!screenSurface) {
+		cerr << "Can't create surface from window : " << SDL_GetError << endl;
+		return false;
+	}
+
 	render = SDL_CreateRenderer(window,1,0);
+	if (!render) {
+		cerr << "Can'r create renderer : " << SDL_GetError << endl;
+		return false;
+	}
 	
 	if (TTF_Init() < 0) {
 		cout << "Error initializing SDL_ttf: " << TTF_GetError() << endl;
@@ -258,7 +278,7 @@ void display() {
 
 int main( int argc, char* args[] )
 {
-	init();
+	if(!init()) return 1;
 	srand(time(0));
 	display();
 	return 0;
