@@ -1,4 +1,23 @@
-﻿  01_hello_SDL.cpp
-C:\LapTrinhNangCao\Project2\Project2\01_hello_SDL.cpp(282,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\LapTrinhNangCao\Project2\Project2\01_hello_SDL.cpp(212): warning C4715: 'init': not all control paths return a value
+﻿  main.cpp
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(232,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(233,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(234,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(234,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(234,32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(235,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(235,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(236,86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(236,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(236,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(237,86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(237,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(237,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(238,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(238,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(238,31): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(239,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(239,56): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(239,38): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(242,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(464,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Project2.vcxproj -> C:\LapTrinhNangCao\Project2\x64\Debug\Project2.exe
