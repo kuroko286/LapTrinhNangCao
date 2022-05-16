@@ -5,7 +5,7 @@ int score = 0;
 int x = 0, y=0;
 int level;
 bool isEnd = false;
-bool isPlayAgain ;
+bool isPlayAgain;
 bool inGameMenu=1;
 bool inGameType=0;
 bool isClassic = 0;
@@ -110,7 +110,9 @@ void drawGameLevel() {
 
 void gameStart() {
 	bool quit = false;
-
+	if (Mix_PausedMusic()) {
+		Mix_PlayMusic(gMusic, -1);
+	}
 	SDL_Event e;
 
 	while (!quit) {
@@ -341,7 +343,9 @@ void close() {
 }
 void gameLoop() {
 	bool quit = false;
-
+	if (Mix_PausedMusic()) {
+		Mix_PlayMusic(gMusic, -1);
+	}
 	SDL_Event e;
 
 	while (!quit) {
@@ -358,22 +362,26 @@ void gameLoop() {
 				if (e.key.keysym.sym == SDLK_DOWN) {
 					if (snake->dir == LEFT || snake->dir == RIGHT) {
 						snake->dir = DOWN;
+						
 					}
 
 				}
 				if (e.key.keysym.sym == SDLK_UP) {
 					if (snake->dir == LEFT || snake->dir == RIGHT) {
 						snake->dir = UP;
+						
 					}
 				}
 				if (e.key.keysym.sym == SDLK_LEFT) {
 					if (snake->dir == DOWN || snake->dir == UP) {
 						snake->dir = LEFT;
+						
 					}
 				}
 				if (e.key.keysym.sym == SDLK_RIGHT) {
 					if (snake->dir == DOWN || snake->dir == UP) {
 						snake->dir = RIGHT;
+						
 					}
 				}
 				if (e.key.keysym.sym == SDLK_p) {
@@ -401,6 +409,11 @@ void gameLoop() {
 		
 		
 		if (isEnd) {
+			if (Mix_PlayingMusic()) {
+				Mix_PauseMusic();
+			}
+			Mix_PlayChannel(-1, highScore, 0);
+			
 			break;
 		}
 		eatFood();
@@ -415,10 +428,20 @@ void gameLoop() {
 }
 
 void display() {
+	
 	Mix_PlayMusic(gMusic, -1);
+	
 	gameStart();
 	SDL_Event e;
-	Mix_PlayChannel(-1, highScore, 0);
+	
+	if (isEnd) {
+		if (Mix_PlayingMusic()) {
+			Mix_PauseMusic();
+		}
+		
+		Mix_PlayChannel(-1, highScore, 0);
+	}
+	
 	while (isEnd) {
 		while (SDL_PollEvent(&e)) {
 			if (e.type == SDL_MOUSEBUTTONDOWN) {
@@ -429,6 +452,7 @@ void display() {
 					
 					isEnd = !isEnd;
 					snake->init();
+					snake->isMove = false;
 					score = 0;
 					gameLoop();
 				}
@@ -436,6 +460,7 @@ void display() {
 					isEnd = !isEnd;
 					snake->init();
 					score = 0;
+					snake->isMove = false;
 					inGameMenu = true;
 					gameStart();
 				}
