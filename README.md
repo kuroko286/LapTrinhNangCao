@@ -12,7 +12,7 @@
   - Game có menu để điều hướng game như chơi game, xem điểm cao, xem thông tin tác giả hay thoát game.
   - khi rắn chết sẽ hiện màn hình endGame.khi đó người chơi có thể chọn chơi lại với mức độ và chế độ đã chọn. nếu không thì sẽ quay lại menu.
   - Game sẽ có âm thanh nền và hiệu ứng âm thanh khi ăn mồi hoặc nhấn nút.
-   Bạn có thể hình dung game qua video này: https://www.youtube.com/watch?v=-fwixMaf9fc
+  - Bạn có thể hình dung game qua video này: https://www.youtube.com/watch?v=-fwixMaf9fc
  4. Các kỹ thuật lập trình:
    Game có sử dụng đồ họa từ thư viện sdl2, sử dụng vector hay con trỏ, mảng, lớp, cấu trúc để lưu trữ các đối tượng game.
   5. Kết luận:
