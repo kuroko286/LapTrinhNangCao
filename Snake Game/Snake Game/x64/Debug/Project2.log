@@ -1,0 +1,23 @@
+﻿  main.cpp
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(236,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(237,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(238,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(238,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(238,32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(239,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(239,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(240,86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(240,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(240,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(241,86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(241,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(241,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(242,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(242,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(242,31): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(243,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(243,56): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(243,38): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(246,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\LapTrinhNangCao\Project2\Project2\main.cpp(510,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project2.vcxproj -> C:\LapTrinhNangCao\Project2\x64\Debug\Project2.exe
