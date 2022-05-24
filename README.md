@@ -24,7 +24,7 @@
    - sử dụng vector(Snake) 
    - con trỏ
    - mảng, lớp, cấu trúc để lưu trữ các đối tượng game.
-  5. Kết luận:
-    - Qua quá trình lập trình game mình đã có thể tổng hợp lại kiến thức mà mình đã học từ đầu đến giờ. Biết áp dụng kiến thức đó để làm ra 1 game cơ bản.
-    - Trong quá trình làm mình có tham khảo tài liệu ở https://lazyfoo.net/tutorials/SDL/ để tìm hiểu về sdl2.
-    - Trong tương lai có thể mình sẽ phát triển thêm các chức năng mới cho game như nhiều người chơi , nhiều loại thức ăn, nhiều loại map,hay sử dụng thêm các thư viện đồ họa khác để cho game đẹp hơn.
+ 5. Kết luận:
+   - Qua quá trình lập trình game mình đã có thể tổng hợp lại kiến thức mà mình đã học từ đầu đến giờ. Biết áp dụng kiến thức đó để làm ra 1 game cơ bản.
+   - Trong quá trình làm mình có tham khảo tài liệu ở https://lazyfoo.net/tutorials/SDL/ để tìm hiểu về sdl2.
+   - Trong tương lai có thể mình sẽ phát triển thêm các chức năng mới cho game như nhiều người chơi , nhiều loại thức ăn, nhiều loại map,hay sử dụng thêm các thư viện đồ họa khác để cho game đẹp hơn.
