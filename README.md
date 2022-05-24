@@ -9,7 +9,7 @@
   * run file main.cpp để chạy game.
   
 2. Mô tả về game:
-  Mình clone game rắn săn mồi với những chức năng cơ bản, cho rắn di chuyển theo 4 hướng và ăn thức ăn đồng thời khi đó rắn sẽ dài ra 
+  - Mình clone game rắn săn mồi với những chức năng cơ bản, cho rắn di chuyển theo 4 hướng và ăn thức ăn đồng thời khi đó rắn sẽ dài ra.
 3. Các chức năng đã cài đặt:
   - chức năng di chuyển rắn bằng 4 nút mũi tên, p để pause game , r để tiếp tục chơi,esc để thoát game.
   - chức năng ăn mồi,khi rắn ăn được mồi sẽ dài ra và tăng điểm tùy theo mức độ chơi.
@@ -20,7 +20,11 @@
   - Game sẽ có âm thanh nền và hiệu ứng âm thanh khi ăn mồi hoặc nhấn nút.
   - Bạn có thể hình dung game qua video này: https://www.youtube.com/watch?v=-fwixMaf9fc
  4. Các kỹ thuật lập trình:
-   Game có sử dụng đồ họa từ thư viện sdl2, sử dụng vector hay con trỏ, mảng, lớp, cấu trúc để lưu trữ các đối tượng game.
+   - Game có sử dụng đồ họa từ thư viện sdl2
+   - sử dụng vector(Snake) 
+   - con trỏ
+   - mảng, lớp, cấu trúc để lưu trữ các đối tượng game.
   5. Kết luận:
-    Qua quá trình lập trình game mình đã có thể tổng hợp lại kiến thức mà mình đã học từ đầu đến giờ. Biết áp dụng kiến thức đó để làm ra 1 game cơ bản.
-    Trong tương lai có thể mình sẽ phát triển thêm các chức năng mới cho game như nhiều người chơi , nhiều loại thức ăn, nhiều loại map,hay sử dụng thêm các thư viện đồ họa khác để cho game đẹp hơn.
+    - Qua quá trình lập trình game mình đã có thể tổng hợp lại kiến thức mà mình đã học từ đầu đến giờ. Biết áp dụng kiến thức đó để làm ra 1 game cơ bản.
+    - Trong quá trình làm mình có tham khảo tài liệu ở https://lazyfoo.net/tutorials/SDL/ để tìm hiểu về sdl2.
+    - Trong tương lai có thể mình sẽ phát triển thêm các chức năng mới cho game như nhiều người chơi , nhiều loại thức ăn, nhiều loại map,hay sử dụng thêm các thư viện đồ họa khác để cho game đẹp hơn.
