@@ -1,7 +1,13 @@
 # LapTrinhNangCao  #Snake Game
 1. Hướng dẫn cài đặt:
-  * Cách lấy chương trình: clone project về desktop bằng gitbash : git clone https://github.com/kuroko286/LapTrinhNangCao.git và mở bằng visual studio
-  * cài sdl2 vào vs, thêm các file dll,header và lib vào đường dẫn
+  * Cách lấy chương trình: clone project về desktop bằng gitbash : git clone https://github.com/kuroko286/LapTrinhNangCao.git và mở project Snake Game bằng visual studio
+  * Cài MinGW-W64 (https://sourceforge.net/projects/mingw-w64/), thư viện đồ họa SDL2 (https://www.libsdl.org/download-2.0.php) và thư viện mở rộng của nó (SDL2_image,  SDL2_ttf)(sdl2_image: https://www.libsdl.org/projects/SDL_image/ ; sdl2_ttf:https://www.libsdl.org/projects/SDL_ttf/release/ ;
+  sdl2_mixer: https://www.libsdl.org/projects/SDL_mixer/)
+  * setup complier: vào Environment Valiables, chọn path, sau đó thêm các folder bin của các file vừa tải.
+  * Mở project property trong vs, chọn vc++ directory và thêm các folder include,lib của các file vừa tải vào directory tương ứng
+  * add dependence: linker->input và copy paste SDL2.lib SDL2main.lib SDL2_ttf.lib SDL2_mixer.lib;
+  * run file main.cpp để chạy game.
+  
 2. Mô tả về game:
   Mình clone game rắn săn mồi với những chức năng cơ bản, cho rắn di chuyển theo 4 hướng và ăn thức ăn đồng thời khi đó rắn sẽ dài ra 
 3. Các chức năng đã cài đặt:
